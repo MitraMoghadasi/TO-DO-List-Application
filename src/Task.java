@@ -25,7 +25,6 @@ public class Task {
     }
 
     public boolean isCompleted() {
-        System.out.println(isCompleted);
         return isCompleted;
     }
 

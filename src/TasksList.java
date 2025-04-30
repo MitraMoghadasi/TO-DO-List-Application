@@ -24,9 +24,13 @@ public class TasksList {
         if (index >= 0 && index < tasksList.size()) {
             Task task = tasksList.get(index);
             task.markAsCompleted();
-            System.out.println("Task with index: " + index + " is done");
+            System.out.println("Task number: " + index + 1 + " is done");
         } else {
             System.out.println("Invalid task");
         }
+    }
+
+    public int getTasksListSize() {
+        return tasksList.size();
     }
 }
