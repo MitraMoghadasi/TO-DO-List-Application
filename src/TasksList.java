@@ -16,7 +16,7 @@ public class TasksList {
         System.out.println("List of tasks : ");
         for (int i = 0; i < tasksList.size(); i++) {
             Task task = tasksList.get(i);
-            System.out.println(task.getTitle() + " " + task.isCompleted());
+            System.out.println(task.getTitle() + " - " + (task.isCompleted() ? "Done" : "In progress"));
         }
     }
 
@@ -24,7 +24,8 @@ public class TasksList {
         if (index >= 0 && index < tasksList.size()) {
             Task task = tasksList.get(index);
             task.markAsCompleted();
-            System.out.println("Task number: " + index + 1 + " is done");
+            int id = index + 1;
+            System.out.println("Task number: " + id + " is done");
         } else {
             System.out.println("Invalid task");
         }
